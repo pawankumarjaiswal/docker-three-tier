@@ -4,7 +4,7 @@ FROM ubuntu
 RUN apt update && apt install apache2 -y
 
 # Copy the index.html file to the default Apache web directory
-COPY index.html /var/www/html/
+COPY frontend/index.html /var/www/html/
 
 # Expose port 80
 EXPOSE 80
